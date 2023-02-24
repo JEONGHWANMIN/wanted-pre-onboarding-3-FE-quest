@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-function Header() {
-  return <Container>Header</Container>;
+function Footer() {
+  return <Container>Footer</Container>;
 }
 
-export { Header };
+export default Footer;
 
 const Container = styled.div`
   border: solid 1px lightgray;

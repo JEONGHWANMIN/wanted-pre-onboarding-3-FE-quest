@@ -7,4 +7,7 @@ function SideBar() {
 
 export { SideBar };
 
-const Container = styled.div``;
+const Container = styled.div`
+  border: solid 1px lightgray;
+  /* width: 100%; */
+`;

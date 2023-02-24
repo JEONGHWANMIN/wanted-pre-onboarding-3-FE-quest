@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
+import Footer from "./_components/Footer";
 import { Header } from "./_components/Header";
 import { SideBar } from "./_components/SideBar";
 
@@ -12,8 +13,8 @@ function HeaderSideBarLayout({ children }: Props) {
     <Container>
       <Header />
       <SideBar />
-      <div className="item">{children}</div>
-      <div className="item">Footer</div>
+      <MainContent>{children}</MainContent>
+      <Footer />
     </Container>
   );
 }
@@ -22,7 +23,7 @@ export { HeaderSideBarLayout };
 
 const Container = styled.div`
   display: grid;
-  height: 100vh;
+
   grid-template-columns: 400px 1fr;
   grid-template-rows: 100px 1fr 300px;
 
@@ -34,3 +35,5 @@ const Container = styled.div`
     grid-column-end: span 2;
   }
 `;
+
+const MainContent = styled.div``;
