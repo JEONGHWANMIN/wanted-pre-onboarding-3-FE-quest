@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 
-function Login() {
+function SignUp() {
   const { authConfig } = useAuth();
   const navigate = useNavigate();
 
@@ -36,4 +36,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default SignUp;

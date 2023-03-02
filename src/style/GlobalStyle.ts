@@ -6,13 +6,14 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
     margin: 0;
   }
-  *, body {
+  body {
     margin : 0;
     box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     height: 100%;
   }
+  
 `;
 
 export { GlobalStyle };

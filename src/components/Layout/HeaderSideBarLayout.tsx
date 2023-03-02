@@ -12,8 +12,10 @@ function HeaderSideBarLayout({ children }: Props) {
   return (
     <Container>
       <Header />
-      <SideBar />
-      <MainContent>{children}</MainContent>
+      <Main>
+        <SideBar />
+        <MainContent>{children}</MainContent>
+      </Main>
       <Footer />
     </Container>
   );
@@ -21,19 +23,10 @@ function HeaderSideBarLayout({ children }: Props) {
 
 export { HeaderSideBarLayout };
 
-const Container = styled.div`
-  display: grid;
+const Container = styled.div``;
 
-  grid-template-columns: 400px 1fr;
-  grid-template-rows: 100px 1fr 300px;
-
-  div:nth-of-type(1) {
-    grid-column-end: span 2;
-  }
-
-  div:nth-child(4) {
-    grid-column-end: span 2;
-  }
+const Main = styled.main`
+  display: flex;
 `;
 
 const MainContent = styled.div``;

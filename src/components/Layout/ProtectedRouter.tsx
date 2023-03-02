@@ -5,7 +5,7 @@ function ProtectedRouter() {
   const { authObj } = useAuth();
 
   if (authObj.auth === false) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/signup" replace />;
   }
 
   return <Outlet />;
