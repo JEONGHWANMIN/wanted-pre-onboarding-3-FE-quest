@@ -1,5 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
+import Input from "../../components/Input/Input";
+import HeaderLayout from "../../components/Layout/HeaderLayout";
 import { useAuth } from "../../context/AuthContext";
 
 function SignUp() {
@@ -7,16 +10,12 @@ function SignUp() {
   const navigate = useNavigate();
 
   return (
-    <div
-      style={{
-        border: "solid 1px red",
-        height: "300px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <div
+    <HeaderLayout>
+      <SignUpForm>
+        <Input label="아이디" />
+        <Input label="비밀번호" />
+      </SignUpForm>
+      {/* <div
         style={{
           cursor: "pointer",
         }}
@@ -31,9 +30,11 @@ function SignUp() {
         }}
       >
         Loing GoGO
-      </div>
-    </div>
+      </div> */}
+    </HeaderLayout>
   );
 }
 
 export default SignUp;
+
+const SignUpForm = styled.form``;

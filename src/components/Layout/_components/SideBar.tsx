@@ -15,7 +15,21 @@ function SideBar() {
 export { SideBar };
 
 const Container = styled.div`
-  background-color: red;
+  width: 30rem;
+  height: 100rem;
+  border-right: solid 1px lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
 `;
 
-const StyledLink = styled(Link)``;
+const StyledLink = styled(Link)`
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: blue;
+  }
+`;

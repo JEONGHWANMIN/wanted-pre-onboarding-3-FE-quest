@@ -40,6 +40,7 @@ const Nav = styled.nav`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
 
   &:hover {
     color: #6b6b0b;

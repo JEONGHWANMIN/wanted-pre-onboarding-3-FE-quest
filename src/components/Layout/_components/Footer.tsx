@@ -9,4 +9,5 @@ export default Footer;
 
 const Container = styled.div`
   border: solid 1px lightgray;
+  height: 30rem;
 `;
