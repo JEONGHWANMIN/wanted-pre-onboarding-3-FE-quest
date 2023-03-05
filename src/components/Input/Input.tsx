@@ -28,14 +28,18 @@ export default Input;
 
 const Container = styled.div``;
 
-const InputBox = styled.div``;
+const InputBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
 
 const Label = styled.label`
   font-size: 1.5rem;
 `;
 
 const CoreInput = styled.input`
-  width: 20rem;
+  flex: 1;
   height: 3rem;
   border: none;
   border-bottom: solid 2px lightgray;
